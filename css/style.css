@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------------header part start______ */
+header {
+    padding-top: 21px;
+
+}
+
+.header_part {
+    width: auto;
+    height: 36px;
+    margin: auto;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.logo .smart {
+    color: black;
+}
+
+.logo .shop {
+    color: #3F69FF;
+}
+
+.header_part .menu {
+    width: 530px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hover {
+    font-weight: 400;
+    color: #3D3D3D;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hover:hover {
+    color: #0052CC;
+    text-decoration: underline;
+}
+
+.icon .user {
+    margin-right: 27px;
+}
+
+.icon img {
+    cursor: pointer;
+}
+
+/* ------search bar ---- */
+.search_bar_div {
+    background-color: #0052CC;
+    width: auto;
+    height: 62px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_icon {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 6px 0% 0% 6px;
+
+}
+
+.search_icon img {
+    margin-top: 6px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.input_div {
+    height: 40px;
+    width: 350px;
+    background-color: white;
+    display: flex;
+}
+
+.input_div input {
+    border: none;
+}
+
+.border {
+    height: 40px;
+    width: 10px;
+    border-radius: 0px 6px 6px 0px;
+    background-color: white;
+}
+
+/* --------header part end ------- */
+
+/* --------main part start--------- */
+.title {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    -webkit-text-stroke: 2px black;
+}
+
+.title h1 {
+    font-size: 20px;
+    margin-top: 84px;
+    margin-bottom: 34px;
+    color: #000000;
+}
+
+
+.wrapper_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    margin: auto;
+    display: block;
+}
+
+.img {
+    width: 260px;
+    height: 340px;
+    margin-top: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.img img {
+    width: 152px;
+    height: 316px;
+    cursor: pointer;
+}
+
+.description {
+    width: 262px;
+    height: 71px;
+    background-color: white;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.phone_name b {
+    display: flex;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.price b {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #3D3D3D;
+}
+
+.added b {
+    font-size: 12px;
+    font-weight: 400;
+    color: #3D3D3D;
+}
+
+.see_more {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.sale div {
+    color: #A60000;
+    margin-top: 6px;
+
+}
+
+
+/* -------popup---------------- */
+#openModal {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+#closeModal {
+    background-color: #8853bd;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 25px;
+}
+
+button:active {
+    opacity: 0, 8;
+}
+
+.modal1 {
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal1.open {
+    opacity: 1;
+    z-index: 999;
+}
+
+.modal-inner {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    padding: 15px 25px;
+    text-align: center;
+    width: 380px;
+}
+
+.modal-inner h2 {
+    margin: 0;
+}
+
+.modal-inner p {
+    line-height: 24px;
+    margin: 10px 0;
+}
